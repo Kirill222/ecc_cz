@@ -1,0 +1,23 @@
+//variables
+
+//fonts import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+//colors
+$grey-bg: #f7f7f7;
+$main-font-color: #333333;
+$grey: #afb7bf;
+$blue: #19b5fe;
+$dark-blue: #013668;
+
+//fonts
+$font: 'Open Sans', sans-serif;
+
+@mixin main-font {
+    font-family: $font;
+    font-weight: 400;
+}
+
+@mixin italic-font {
+
+}
