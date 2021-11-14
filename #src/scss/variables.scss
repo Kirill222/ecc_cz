@@ -12,12 +12,3 @@ $dark-blue: #013668;
 
 //fonts
 $font: 'Open Sans', sans-serif;
-
-@mixin main-font {
-    font-family: $font;
-    font-weight: 400;
-}
-
-@mixin italic-font {
-
-}
