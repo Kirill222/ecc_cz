@@ -24,10 +24,22 @@
         &:hover {
             background-color: $blue;
         }
+        .simple-link {
+            display: block;
+            margin-right: 10px;
+            margin-left: 10px;
+            position: relative;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 50px;
+            &:hover {
+                color: #fff;
+            }
+        }
         .link {
             display: block;
             margin-right: 30px;
-            margin-left: 20px;
+            margin-left: 10px;
             position: relative;
             font-weight: 600;
             font-size: 14px;
@@ -41,7 +53,7 @@
                 height: 0;
                 border-left: 3px solid transparent;
                 border-right: 3px solid transparent;
-                border-top: 6px solid #e8e8e8;
+                border-top: 5px solid #e8e8e8;
             }
         }
         
@@ -50,19 +62,69 @@
         }
         &:hover .dropdown-menu2{
             opacity: 1;
-        }
+            transform: translateY(0);
+            pointer-events: auto;
+        }       
 
-        .dropdown-menu2 {
+        .dropdown-menu2 {            
             position: absolute;
             left: 0;
-            top: calc(100% + .25rem);
+            top: 50px;
             background: $blue;
             padding: 0.75rem;
-            border-radius: .25rem;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
             opacity: 0;
-            transition: opacity .2s ease-in-out;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+
+            font-size: 14px;
+            line-height: 37px;
+            padding: 30px 25px;
         }
     }
+}
+
+.dropdown-links {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+}
+
+//main submenu
+
+.navigation .dropdown2 .main-dropdown {
+    padding: 0;
+}
+
+.main-submenu {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+
+    .edu-options {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 30px;   
+        padding: 30px 25px;    
+
+        .item {
+            position: relative;            
+        }
+    }
+
+    .details {
+        background: #fff;
+        padding: 25px 25px;
+        //padding: 15px 25px;
+        color: $dark-blue;
+
+        li {
+            padding: 10px 0;
+        }
+    }
+
+
 }
 

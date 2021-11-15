@@ -26,6 +26,10 @@ a {
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 img {
@@ -61,6 +65,7 @@ body {
 
 @import './_page-header.scss';
 @import './_page-navigation.scss';
+@import './_page-banner.scss';
 
 
 
