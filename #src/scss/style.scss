@@ -1,4 +1,6 @@
 //@import "./normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
 @import "./variables.scss";
 
 
@@ -61,11 +63,16 @@ body {
     background-color: #fff;
     font-family: $font;
     font-weight: 400;
+
+    @include main-font;
 }
 
 @import './_page-header.scss';
 @import './_page-navigation.scss';
 @import './_page-banner.scss';
+@import './_page-main-content.scss';
+@import './_page-main.scss';
+@import './_page-aside.scss';
 
 
 

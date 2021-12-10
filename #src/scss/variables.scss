@@ -1,8 +1,5 @@
 //variables
 
-//fonts import
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
-
 //colors
 $grey-bg: #f7f7f7;
 $main-font-color: #333333;
@@ -12,3 +9,22 @@ $dark-blue: #013668;
 
 //fonts
 $font: 'Open Sans', sans-serif;
+$main-font-size: 15px;
+
+@mixin main-font {
+    color: $main-font-color;
+    font-size: $main-font-size;
+}
+
+@mixin main-subheader {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;    
+}
+
+@mixin intext-link {
+    color: $blue;
+    &:hover {
+        color: $dark-blue;
+    }
+}
